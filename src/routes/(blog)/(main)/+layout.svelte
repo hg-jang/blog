@@ -36,14 +36,14 @@
   <h1
     class="mb-4 font-blackSans text-[var(--primary-blue)] dark:text-[var(--primary-blue-dark)] text-6xl"
   >
-    <a href="/">
+    <a href="{base}/">
       {BLOG_NAME}
     </a>
   </h1>
   <div class="flex flex-row gap-x-4">
     <img class="w-20 h-20 rounded-full object-cover" src="{base}/images/profile.jpg" alt="" />
     <div>
-      <a href="/" class="inline-block py-1 px-2 mb-1 bg-blue-100 text-inherit rounded-md">
+      <a href="{base}/" class="inline-block py-1 px-2 mb-1 bg-blue-100 text-inherit rounded-md">
         <span class="font-semibold gradient-evening-sunshine">@{GITHUB_NAME}</span>
       </a>
       <p class="mb-2 text-inherit">{BLOG_INTRODUCTION}</p>

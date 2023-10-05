@@ -1,6 +1,10 @@
 <script>
   import { DarkMode } from 'flowbite-svelte';
+
+  import { base } from '$app/paths';
+
   import { LINK, NAVS } from '$lib/config/config';
+
   import Wave from './Wave.svelte';
 </script>
 
@@ -24,7 +28,7 @@
     </ul>
 
     <div>
-      <a href={LINK.internal.wave}>
+      <a href={base + LINK.internal.wave}>
         <Wave />
       </a>
       <DarkMode
