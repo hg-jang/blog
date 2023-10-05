@@ -51,13 +51,13 @@
     if (currentPage === 1) {
       return;
     }
-    goto(`/?p=${currentPage - 1}`);
+    goto(`${base}/?p=${currentPage - 1}`);
   }
   function next() {
     if (currentPage === totalPages) {
       return;
     }
-    goto(`/?p=${currentPage + 1}`);
+    goto(`${base}/?p=${currentPage + 1}`);
   }
 
   $: currentPage = Number((browser && $page.url.searchParams.get('p')) || '1');
