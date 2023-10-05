@@ -2,7 +2,7 @@
   import { fly } from 'svelte/transition';
   import { Toast } from 'flowbite-svelte';
 
-  import { base } from '$app/paths';
+  import { assets } from '$app/paths';
 
   import { BLOG_NAME, GITHUB_NAME, BLOG_INTRODUCTION, LINK } from '$lib/config/config';
   import Footer from '$lib/components/common/Footer.svelte';
@@ -41,7 +41,7 @@
     </a>
   </h1>
   <div class="flex flex-row gap-x-4">
-    <img class="w-20 h-20 rounded-full object-cover" src="{base}/images/profile.jpg" alt="" />
+    <img class="w-20 h-20 rounded-full object-cover" src="{assets}/images/profile.jpg" alt="" />
     <div>
       <a href="/" class="inline-block py-1 px-2 mb-1 bg-blue-100 text-inherit rounded-md">
         <span class="font-semibold gradient-evening-sunshine">@{GITHUB_NAME}</span>
@@ -50,8 +50,8 @@
       <div class="flex flex-row">
         <!-- Github icon -->
         <a href={LINK.github} target="_blank" class="blog-social-button">
-          <img src="{base}/icons/github-mark-white.png" class="hidden dark:block" alt="github" />
-          <img src="{base}/icons/github-mark.png" class="block dark:hidden" alt="github" />
+          <img src="{assets}/icons/github-mark-white.png" class="hidden dark:block" alt="github" />
+          <img src="{assets}/icons/github-mark.png" class="block dark:hidden" alt="github" />
         </a>
 
         <!-- Gmail icon -->
@@ -89,7 +89,7 @@
   contentClass="flex space-x-4 divide-x divide-gray-200 dark:divide-gray-700"
   position="top-right"
 >
-  <img src="{base}/icons/gmail.png" alt="" class="w-[25px]" />
+  <img src="{assets}/icons/gmail.png" alt="" class="w-[25px]" />
   <div class="pl-4 text-sm font-normal">Gmail address copied!</div>
 </Toast>
 
