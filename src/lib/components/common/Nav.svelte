@@ -17,7 +17,7 @@
         {#if nav.active}
           <li class="text-[var(--text-light)] dark:hover:text-[var(--text-dark)]">
             <a
-              href={nav.path}
+              href={base + nav.path}
               class="block px-2.5 leading-[40px] break-keep rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               {nav.nav}
