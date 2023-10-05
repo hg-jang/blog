@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
   import { browser } from '$app/environment';
-  import { assets } from '$app/paths';
+  import { base } from '$app/paths';
 
   import { formatDate } from '$lib/utils/date';
   import CategoryNav from '$lib/components/common/CategoryNav.svelte';
@@ -110,7 +110,7 @@
   <meta name="og:title" content="블로그" />
   <meta name="og:description" content="바다의 블로그입니다. " />
   <meta name="og:type" content="website" />
-  <meta name="og:image" content="{assets}/images/wave.jpg" />
+  <meta name="og:image" content="{base}/images/wave.jpg" />
 </svelte:head>
 
 <CategoryNav categories={data.categories} bind:selectedCategory />

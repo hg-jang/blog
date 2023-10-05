@@ -1,7 +1,7 @@
 <script>
   import { Badge } from 'flowbite-svelte';
 
-  import { assets } from '$app/paths';
+  import { base } from '$app/paths';
 
   import { formatDate } from '$lib/utils/date.js';
   import Nav from '$lib/components/common/Nav.svelte';
@@ -40,7 +40,7 @@
   <meta name="og:title" content={data.meta.title} />
   <meta name="og:description" content={data.meta.description} />
   <meta name="og:type" content="website" />
-  <meta name="og:image" content="{assets}/images/wave.jpg" />
+  <meta name="og:image" content="{base}/images/wave.jpg" />
 </svelte:head>
 
 <header class="p-8 text-[var(--text-light)] dark:text-[var(--text-dark)]">
