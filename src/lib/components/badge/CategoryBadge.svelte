@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   /**
    * @type {string} text
    */
@@ -54,27 +55,27 @@
     </span>
   {:else if text === 'svelte'}
     <div class="badge-icon-box mr-1 p-0.5 bg-gray-500 rounded">
-      <img class="badge-icon" src="icons/svelte-svgrepo-com.svg" alt="" />
+      <img class="badge-icon" src="{base}/icons/svelte-svgrepo-com.svg" alt="" />
     </div>
     <span> svelte </span>
   {:else if text === 'react'}
     <div class="badge-icon-box mr-1 p-0.5 bg-gray-500 rounded">
-      <img src="icons/react-svgrepo-com.svg" alt="" class="badge-icon" />
+      <img src="{base}/icons/react-svgrepo-com.svg" alt="" class="badge-icon" />
     </div>
     <span> react </span>
   {:else if text === 'python'}
     <div class="badge-icon-box mr-1 p-0.5 bg-gray-500 rounded">
-      <img src="icons/python-svgrepo-com.svg" alt="" class="badge-icon" />
+      <img src="{base}/icons/python-svgrepo-com.svg" alt="" class="badge-icon" />
     </div>
     <span> python </span>
   {:else if text === 'docker'}
     <div class="badge-icon-box mr-1 p-0.5 bg-gray-500 rounded">
-      <img src="icons/docker-svgrepo-com.svg" alt="" class="badge-icon" />
+      <img src="{base}/icons/docker-svgrepo-com.svg" alt="" class="badge-icon" />
     </div>
     <span> docker </span>
   {:else if text === 'gcp'}
     <div class="badge-icon-box mr-1 p-0.5 bg-gray-500 rounded">
-      <img src="icons/gcp-svgrepo-com.svg" alt="" class="badge-icon" />
+      <img src="{base}/icons/gcp-svgrepo-com.svg" alt="" class="badge-icon" />
     </div>
     <span> gcp </span>
   {:else if text === '일상'}
