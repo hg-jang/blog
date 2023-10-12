@@ -1,6 +1,6 @@
 ---
 title: Go로 초간단 API 서버 띄워보기
-description: git-flow 이해하고 사용해보기
+description: Golang과 함께 echo, postgres, gorm을 이용하여 간단한 REST API 서버 만들어보기입니다.
 date: '2023-10-11 23:24:00'
 categories:
   - Go
