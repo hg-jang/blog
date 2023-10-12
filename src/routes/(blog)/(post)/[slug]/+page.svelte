@@ -60,6 +60,8 @@
     class="
       prose prose-base max-w-none text-[var(--text-light)] dark:text-[var(--text-dark)]
       prose-headings:text-[var(--text-light)] dark:prose-headings:text-[var(--text-dark)]
+      dark:prose-blockquote:text-[#e5e7eb]
+      dark:prose-code:text-[#ebdbb2]
     "
   >
     <svelte:component this={data.content} />
