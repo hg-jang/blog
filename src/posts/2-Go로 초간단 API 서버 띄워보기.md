@@ -93,7 +93,7 @@ $ go run main.go
 
 `localhost:1323`으로 이동해보면 `Hello, World!`가 잘 나오는 것을 볼 수 있습니다.
 
-![Hello world]($lib/images/2-Go로%20초간단%20API%20서버%20띄워보기/1.png)
+![Hello world](lib/images/2-Go로%20초간단%20API%20서버%20띄워보기/1.png)
 
 # DB 준비
 
@@ -304,6 +304,6 @@ func main() {
 $ go run main.go
 ```
 
-![Alt text]($lib/images/2-Go로%20초간단%20API%20서버%20띄워보기/2.png)
+![Alt text](lib/images/2-Go로%20초간단%20API%20서버%20띄워보기/2.png)
 
 커넥션이 정상적으로 이루어졌다면 위 사진과 같이 데이터가 반환됩니다.
