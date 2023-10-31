@@ -1,6 +1,6 @@
 ---
 title: GCP 제한된 서비스 계정 생성
-description: Google Cloud Console에서 특정 역할의 서비스 계정만을 생성할 수 있도록 제한하는 방법입니다.
+description: Google Cloud Console에서 특정 역할의 서비스 계정만을 생성할 수 있도록 제한하는 방법.
 date: '2023-10-31 21:13'
 categories:
   - GCP
@@ -21,7 +21,7 @@ published: true
 위 두가지는 서비스 계정 목록을 볼 수 있거나 생성할 수 있는 권한입니다.
 마지막 권한은 서비스 계정 생성 단계에서 역할을 부여할 수 있도록 합니다.
 
-![1.png](images/3-GCP 서비스 계정 제한하기/1.png)
+![1.png](images/3-GCP%20서비스%20계정%20제한하기/1.png)
 
 다만, 이 권한은 프로젝트의 모든 역할에 접근할 수 있기 때문에 적절치 않을 수 있습니다.
 이 때, 특정 역할을 가진 서비스 계정만 생성할 수 있도록 제한하는 방법이 있습니다.
@@ -33,7 +33,7 @@ published: true
 
 아래와 같이 `iam.serviceAccounts.list`와 `iam.serviceAccounts.create` 권한만을 부여한 커스텀 역할을 생성합니다.
 
-![3.png](images/3-GCP 서비스 계정 제한하기/3.png)
+![3.png](images/3-GCP%20서비스%20계정%20제한하기/3.png)
 
 # IAM 권한 부여
 
@@ -43,7 +43,7 @@ published: true
 
 역할 부여에서 이전에 만든 커스텀 역할과 함께 `Resource Manager - Project IAM Admin`을 선택하여 2가지를 부여합니다.
 
-![5.png](images/3-GCP 서비스 계정 제한하기/5.png)
+![5.png](images/3-GCP%20서비스%20계정%20제한하기/5.png)
 
 여기까지만 한다면, 해당 유저는 모든 종류의 서비스 계정을 생성할 수 있습니다.
 제한 사항을 추가하려면, `Project IAM Admin` 우측에 있는 `+ ADD IAM CONDITION`을 눌러 조건을 추가해주어야 합니다.
@@ -63,7 +63,7 @@ api.getAttribute('iam.googleapis.com/modifiedGrantsByRole', []).hasOnly(['roles/
 - roles/pubsub.editor
 - roles/pubsub.publisher
 
-![6.png](images/3-GCP 서비스 계정 제한하기/6.png)
+![6.png](images/3-GCP%20서비스%20계정%20제한하기/6.png)
 
 작성을 완료하고 저장을 누르세요.
 
@@ -73,9 +73,9 @@ api.getAttribute('iam.googleapis.com/modifiedGrantsByRole', []).hasOnly(['roles/
 
 먼저, IAM에서 권한을 수정하려하면 아래와 같이 실패합니다.
 
-![gif](images/3-GCP 서비스 계정 제한하기/gif_1.gif)
+![gif](images/3-GCP%20서비스%20계정%20제한하기/gif_1.gif)
 
 이번엔 서비스 계정으로 이동하여 서비스 계정을 만들어 봅니다.
 앞서 지정한 역할과 무관한 것을 추가하면 실패하는 반면, 동일한 역할을 추가하면 성공하는 모습을 볼 수 있습니다.
 
-![gif](images/3-GCP 서비스 계정 제한하기/gif_2.gif)
+![gif](images/3-GCP%20서비스%20계정%20제한하기/gif_2.gif)
