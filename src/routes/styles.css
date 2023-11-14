@@ -50,6 +50,9 @@ body {
 .text-muted {
   color: var(--text-muted);
 }
+.text-post-description {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 .gradient-evening-sunshine {
   background: #b92b27; /* fallback for old browsers */

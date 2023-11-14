@@ -128,7 +128,7 @@
       <a href="{base}/{post.slug}">
         <h3 class="text-xl font-medium">{post.title}</h3>
         <p class="mb-1 text-xs text-muted">{formatDate(post.date)}</p>
-        <p class="text-base">{post.description}</p>
+        <p class="text-base text-post-description">{post.description}</p>
       </a>
     </li>
   {/each}
