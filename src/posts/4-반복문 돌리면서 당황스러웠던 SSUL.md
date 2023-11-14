@@ -39,8 +39,6 @@ arr.map(async (el) => {
 
 그런데.... 스크립트 결과가... 뭔가 이상하다?
 
-그래서... 콘솔을 한 번 찍어봤더니....?
-
 ```js
 arr.map(async (el) => {
   console.log('[el]', el);
@@ -58,11 +56,7 @@ arr.map(async (el) => {
 });
 ```
 
-아라라...?
-
-내가... `async`를 잘못 썼나???
-
-어딘가 `await`를 빠트렸나...?
+그래서... 콘솔을 한 번 찍어봤더니....?
 
 ```sh
 # [el] { personAId: 3, personBId: 4 }
@@ -74,6 +68,12 @@ arr.map(async (el) => {
 # [result] { pointA: 23, pointB: 27 }
 # [result] { pointA: 30, pointB: 15 }
 ```
+
+아라라...?
+
+내가... `async`를 잘못 썼나???
+
+어딘가 `await`를 빠트렸나...?
 
 아니... 왜...? `await`은 `async` 안에서 순차적으로 실행되는게 맞는데.... 아닌가...... ㅜㅜ....?
 
