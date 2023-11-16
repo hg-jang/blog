@@ -46,7 +46,11 @@
       <a href="{base}/" class="inline-block py-1 px-2 mb-1 bg-blue-100 text-inherit rounded-md">
         <span class="font-semibold gradient-evening-sunshine">@{GITHUB_NAME}</span>
       </a>
-      <p class="mb-2 text-inherit">{BLOG_INTRODUCTION}</p>
+      <p class="mb-2 text-inherit">
+        망상하는 개발자의 블로그입니다.
+        <br />
+        요즘엔 Nest에 관심이 많습니다.
+      </p>
       <div class="flex flex-row">
         <!-- Github icon -->
         <a href={LINK.github} target="_blank" class="blog-social-button">
