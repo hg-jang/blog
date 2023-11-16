@@ -1,6 +1,12 @@
 <script>
+  import { Tooltip } from 'flowbite-svelte';
+
   import { LINK } from '$lib/config/config';
   import Divider from '$lib/elements/divider/Divider.svelte';
+
+  function onClickEmail() {
+    window.navigator.clipboard.writeText(LINK.email);
+  }
 </script>
 
 <article class="text-[var(--text-light)] dark:text-[var(--text-dark)]">
@@ -8,14 +14,28 @@
   <h2 class="mb-2 text-4xl font-semibold tracking-wider">장현광</h2>
   <p class="text-muted">웹 개발자</p>
   <Divider extraClass="my-4" />
-  <p class="mb-2">Contact: wkdgusrhkd@gmail.com | 010-2534-2333</p>
-  <p class="mb-8">Github: https://github.com/hg-jang</p>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <!-- svelte-ignore a11y-no-static-element-interactions -->
+  <p class="mb-2">
+    Email <span
+      id="emailTooltip"
+      class="text-sky-600 dark:text-sky-300 underline cursor-pointer"
+      on:click={onClickEmail}>@wkdgusrhkd</span
+    >
+  </p>
+  <p class="mb-8">
+    Github <a href={LINK.github} target="_blank" class="text-sky-600 dark:text-sky-300 underline"
+      >@hg-jang</a
+    >
+  </p>
+
+  <Tooltip trigger="click" triggeredBy="#emailTooltip">Email copied!</Tooltip>
 
   <!-- 스킬 -->
   <section class="mb-8">
     <h3 class="text-xl font-semibold">Skills</h3>
     <Divider extraClass="my-1" />
-    <p class="mb-1">Frontend: JavaScript(TypeScript), React, Next, Svelte, Tailwind</p>
+    <p class="mb-1">Frontend: JavaScript(TypeScript), React, Svelte, Tailwind</p>
     <p class="mb-1">Backend: Node.js, PostgreSQL, PostGIS</p>
     <p>Else: Docker</p>
   </section>
