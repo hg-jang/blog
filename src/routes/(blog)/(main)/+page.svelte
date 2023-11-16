@@ -116,7 +116,7 @@
 <CategoryNav categories={data.categories} bind:selectedCategory />
 
 <!-- posts -->
-<ul class="flex flex-col gap-y-3">
+<ul class="flex flex-col gap-y-5">
   {#each pagnationedPosts as post}
     <li
       class="
