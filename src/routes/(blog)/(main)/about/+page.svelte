@@ -59,6 +59,14 @@
   <section class="mb-8">
     <h3 class="mb-1 text-xl font-semibold">Project</h3>
     <Divider extraClass="my-1" />
+
+    <!-- ol-measurement -->
+    <p>ol-measurement</p>
+    <p class="mb-1 text-sm text-muted">2024년 10월 ~</p>
+    <ul class="list-disc ml-6">
+      <li>측정 툴을 생성해주는 `ol`의 커스텀 컨트롤 라이브러리</li>
+      <li>npm, rollup, JavaScript</li>
+    </ul>
   </section>
 
   <!-- 교육 -->
