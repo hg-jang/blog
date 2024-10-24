@@ -1,6 +1,6 @@
 ---
-title: Test Post
-description: 테스트용 포스트
+title: Template
+description: 템플릿용 포스트
 date: '2023-10-06 23:54'
 categories:
 published: false

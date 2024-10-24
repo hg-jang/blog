@@ -2,7 +2,7 @@
   import { Tooltip } from 'flowbite-svelte';
 
   import { LINK } from '$lib/config/config';
-  import Divider from '$lib/elements/divider/Divider.svelte';
+  import Divider from '$lib/components/divider/Divider.svelte';
   import SectionTitle from './_components/SectionTitle.svelte';
   import SectionItemTitle from './_components/SectionItemTitle.svelte';
   import SectionItemSubTitle from './_components/SectionItemSubTitle.svelte';

@@ -5,7 +5,7 @@
   import { base } from '$app/paths';
 
   import { formatDate } from '$lib/utils/date';
-  import CategoryNav from '$lib/components/common/CategoryNav.svelte';
+  import CategoryNav from '../_components/CategoryNav.svelte';
 
   import { Pagination } from 'flowbite-svelte';
   import PostCard from '$lib/components/card/PostCard.svelte';
