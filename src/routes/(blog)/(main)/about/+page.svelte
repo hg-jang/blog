@@ -70,7 +70,9 @@
     <Divider extraClass="my-1" />
 
     <!-- ol-measurement -->
-    <SectionItemTitle>ol-measurement</SectionItemTitle>
+    <SectionItemTitle>
+      <a href={LINK.olMeasurement} target="_blank"> ol-measurement </a>
+    </SectionItemTitle>
     <SectionItemSubTitle>2024년 10월 ~</SectionItemSubTitle>
 
     <SectionItemDescriptionList>

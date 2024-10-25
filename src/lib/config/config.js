@@ -11,6 +11,7 @@ export const LINK = {
   email: 'wkdgusrhkd@gmail.com',
   gcpCertificate:
     'https://google.accredible.com/6d9c66ef-3808-4f33-8c46-51402f2adce4?key=5f9b0e333cd2621db82ff534d3defc7dd7b341586425e165f5138294858bfa01',
+  olMeasurement: 'https://www.npmjs.com/package/ol-measurement',
 
   internal: {
     blog: '/',
