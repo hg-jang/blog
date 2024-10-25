@@ -5,8 +5,8 @@
   import { base } from '$app/paths';
 
   import { BLOG_NAME, GITHUB_NAME, BLOG_INTRODUCTION, LINK } from '$lib/config/config';
-  import Footer from '$lib/components/common/Footer.svelte';
-  import Nav from '$lib/components/common/Nav.svelte';
+  import Footer from '../_components/Footer.svelte';
+  import Nav from '../_components/Nav.svelte';
 
   let show = false;
   let counter = 0;
@@ -47,7 +47,7 @@
         <span class="font-semibold gradient-evening-sunshine">@{GITHUB_NAME}</span>
       </a>
       <p class="mb-2 text-inherit">
-        망상하는 개발자의 블로그입니다.
+        망상하는 개발자입니다.
         <br />
         요즘엔 Nest에 관심이 많습니다.
       </p>

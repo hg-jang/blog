@@ -1,30 +1,12 @@
 <script>
-  import { Badge } from 'flowbite-svelte';
-
   import { base } from '$app/paths';
 
   import { formatDate } from '$lib/utils/date.js';
   import Nav from '$lib/components/common/Nav.svelte';
-  import Divider from '$lib/elements/divider/Divider.svelte';
-
-  /**
-   * @returns {any}
-   */
-  function randomColor() {
-    const colors = [
-      'dark',
-      'red',
-      'green',
-      'yellow',
-      'indigo',
-      'purple',
-      'pink',
-      'none',
-      'blue',
-      'primary',
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
-  }
+  import Divider from '$lib/components/divider/Divider.svelte';
+  import PostTitle from '../_components/PostTitle.svelte';
+  import PostDate from '../_components/PostDate.svelte';
+  import PostCategory from '../_components/PostCategory.svelte';
 
   export let data;
 </script>
@@ -44,11 +26,11 @@
 </svelte:head>
 
 <header class="p-8 text-[var(--text-light)] dark:text-[var(--text-dark)]">
-  <h1 class="mb-4 font-blackSans text-inherit text-6xl">{data.meta.title}</h1>
-  <p class="mb-1 text-sm text-muted">{formatDate(data.meta.date)}</p>
-  <div>
+  <PostTitle>{data.meta.title}</PostTitle>
+  <PostDate>{formatDate(data.meta.date)}</PostDate>
+  <div class="flex flex-wrap gap-x-2">
     {#each data.meta.categories as category}
-      <Badge border color={randomColor()} class="mr-1">{category}</Badge>
+      <PostCategory {category} />
     {/each}
   </div>
 </header>
