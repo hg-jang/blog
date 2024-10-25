@@ -2,11 +2,11 @@
   import { base } from '$app/paths';
 
   import { formatDate } from '$lib/utils/date.js';
-  import Nav from '$lib/components/common/Nav.svelte';
   import Divider from '$lib/components/divider/Divider.svelte';
   import PostTitle from '../_components/PostTitle.svelte';
   import PostDate from '../_components/PostDate.svelte';
   import PostCategory from '../_components/PostCategory.svelte';
+  import Nav from '../../_components/Nav.svelte';
 
   export let data;
 </script>
