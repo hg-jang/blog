@@ -71,7 +71,7 @@
 
     <!-- ol-measurement -->
     <SectionItemTitle>
-      <a href={LINK.olMeasurement} target="_blank"> ol-measurement </a>
+      <a href={LINK.olMeasurement} target="_blank">ol-measurement</a>
     </SectionItemTitle>
     <SectionItemSubTitle>2024년 10월 ~</SectionItemSubTitle>
 
